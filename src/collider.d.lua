@@ -103,13 +103,6 @@ function Collider:neighbors(shape) end
 function Collider:shapesAt(x, y) end
 
 ---
----Get the [`Spatialhash`](lua://HC.Spatialhash) instance.
----
----@return HC.Spatialhash
----@nodiscard
-function Collider:hash() end
-
----
 ---Reset the internal search structure (the spatial hash). This clears all shapes that were registered beforehand, meaning that HC will not be able to find any collisions with those shapes anymore.
 ---
 ---@param cell_size? number The cell size for the spatial hash (default: `100`).
