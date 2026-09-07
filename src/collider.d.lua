@@ -107,13 +107,7 @@ function Collider:shapesAt(x, y) end
 ---
 ---@return HC.Spatialhash
 ---@nodiscard
-function Collider:hash() end---
----A collider instance that holds a separate spatial hash.
----
----@see HC.new
----
----@class HC.Collider
-local Collider = {}
+function Collider:hash() end
 
 ---
 ---Reset the internal search structure (the spatial hash). This clears all shapes that were registered beforehand, meaning that HC will not be able to find any collisions with those shapes anymore.
@@ -221,7 +215,7 @@ function Collider:hash() end
 ---
 ---Most of the time, HC will be run as a singleton; you can, however, also create several instances using [`HC.new()`](lua://HC.new) or `HC()`, which will each hold their own little worlds.
 ---
----@class HC
+---@overload fun(cell_size?: number)
 local module = {}
 
 ---
