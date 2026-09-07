@@ -223,7 +223,6 @@ function Collider:hash() end
 ---
 ---Most of the time, HC will be run as a singleton; you can, however, also create several instances using [`HC.new()`](lua://HC.new) or `HC()`, which will each hold their own little worlds.
 ---
----@class HC
 local module = {}
 
 ---
