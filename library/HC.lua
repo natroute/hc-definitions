@@ -110,6 +110,7 @@ function Collider:shapesAt(x, y) end
 ---@return HC.Spatialhash
 ---@nodiscard
 function Collider:hash() end
+function Collider:hash() end
 
 ---
 ---Reset the internal search structure (the spatial hash). This clears all shapes that were registered beforehand, meaning that HC will not be able to find any collisions with those shapes anymore.
@@ -330,6 +331,7 @@ function module.shapesAt(x, y) end
 ---
 ---@return HC.Spatialhash
 ---@nodiscard
+function module.hash() end
 function module.hash() end
 
 ---
